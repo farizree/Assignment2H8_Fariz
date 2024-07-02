@@ -1,0 +1,37 @@
+.navbar-nav { 
+    margin-left: 500px; 
+}
+.base_box {
+    background-color: white;
+    margin: 30px;
+    padding: 20px;
+  }
+  img {
+    width: 20%;
+    height: auto;
+  }
+  .column {
+    float: left;
+    width: 20.33%;
+    padding: 5px;
+  }
+  .column2 {
+    float: left;
+    width: 32.33%;
+    padding: 5px;
+  }
+  .column3 {
+    float: left;
+    width: 14.33%;
+    padding: 5px;
+  }
+  .column4 {
+    float: left;
+    width: 7.33%;
+    padding: 5px;
+  }
+  .bolded {
+    font-weight: bold;
+  }
+
+  

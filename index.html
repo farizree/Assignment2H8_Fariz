@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-light">
+      <div class="container">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Product </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Gallery </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Blog </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Inventory </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container mt-5 bg-light">
+      <div class="row">
+        <div class="col-3">
+          <img src="./images/pp.jpg" alt="pp" style="width:80%">
+        </div>
+        <div class="col-4">
+          <h3 id="name-view">Muhammad Fariz Hidayat </h1>
+            <p id="role-view">Software Engineer</p>
+            <button onclick="buttonEdit()" type="button" id="edit" class="btn btn-primary btn-md center-block" Style="width: 100px;">Edit</button>
+            <button type="button" class="btn btn-outline-success btn-md center-block" Style="width: 100px;">Resume</button>
+        </div>
+
+        <div class="col-2">
+          <p>
+            <span class="bolded">Avalability
+          </p>
+          <p>
+            <span class="bolded">Usia
+          </p>
+          <p>
+            <span class="bolded">Lokasi
+          </p>
+          <p>
+            <span class="bolded">Pengalaman
+          </p>
+          <p>
+            <span class="bolded">Email
+          </p>
+        </div>
+        <div class="column1">
+          <p id="avalability-view">Fulltime</p>
+          <p id="usia-view">17th</p>
+          <p id="lokasi-view">Jakarta</p>
+          <p id="experience-view">2</p>
+          <p id="email-view">muhammad_f_hidayat@telkomsel.co.id</p>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 bg-light" id="form-div" style="display: none;">
+        <form>
+            <div class="form-group">
+              <label for="nama">Nama Anda</label>
+              <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Anda" disabled>
+            
+            </div>
+            <div class="form-group">
+                <label for="role">Role</label>
+                <input type="text" class="form-control" id="role">
+               
+              </div>
+              <div class="form-group">
+                <label for="avalability">Avalability</label>
+                <input type="text" class="form-control" id="avalability">
+              </div>
+              <div class="form-group">
+                <label for="usia">Usia</label>
+                <input type="text" class="form-control" id="usia">
+              </div>
+              <div class="form-group">
+                <label for="lokasi">Lokasi</label>
+                <input type="text" class="form-control" id="lokasi">
+              </div>
+            <div class="form-group">
+              <label for="yearExperience">Years Experience</label>
+              <input type="text" class="form-control" id="yearExperience">
+            </div>
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+            <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+          </form>
+    </div>
+    <script type="text/javascript">
+      function buttonEdit() {
+        var x = document.getElementById("form-div");  
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+
+        let nameView = document.getElementById("name-view").innerHTML;
+        let roleView = document.getElementById("role-view").innerHTML;
+        let avalabilityView = document.getElementById("avalability-view").innerHTML;
+        let usiaView = document.getElementById("usia-view").innerHTML;
+        let lokasiView = document.getElementById("lokasi-view").innerHTML;
+        let experienceView = document.getElementById("experience-view").innerHTML;
+        let emailView = document.getElementById("email-view").innerHTML;
+
+        document.getElementById("nama").value = nameView;
+        document.getElementById("role").value = roleView;
+        document.getElementById("avalability").value = avalabilityView;
+        document.getElementById("usia").value = usiaView;
+        document.getElementById("lokasi").value = lokasiView;
+        document.getElementById("yearExperience").value = experienceView;
+        document.getElementById("email").value = emailView;
+
+
+      }
+  </script>
+  </body>
+</html>
